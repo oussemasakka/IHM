@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/icon1.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/logo4.png') }}">
     <!-- Plugins -->
     <link href="{{ asset('Admin/assets/plugins/datatable/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('Admin/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet"/>
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{{ asset('Admin/assets/css/dark-theme.css') }}" />
     <link rel="stylesheet" href="{{ asset('Admin/assets/css/semi-dark.css') }}" />
     <link rel="stylesheet" href="{{ asset('Admin/assets/css/header-colors.css') }}" />
-    <title>fe</title>
+    <title>Horizons Travel</title>
 </head>
 <body>
     <!--wrapper-->
@@ -124,18 +124,19 @@
             <div class="sidebar-wrapper" data-simplebar="true">
                 <div class="sidebar-header">
                     <div>
-                        <img src="{{ asset('assets/images/LOGO horr.png')}}" class="logo-icon" alt="logo icon">
+                        <img src="{{ asset('assets/img/logo1.png') }}"  class="logo-icon" alt="logo icon">
                     </div>
                     <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i></div>
                 </div>
                 <!--navigation-->
                 <ul class="metismenu" id="menu">
                     <li><a href="/home"><div class="parent-icon"><i class='bx bx-home-circle'></i></div><div class="menu-title">Dashboard</div></a></li>
-                    <li class="menu-label">Gestion I-shop</li>
-                    <li><a href="/users"><div class="parent-icon"><i class='bx bx-user-circle'></i></div><div class="menu-title">Gestion des Utilisateurs</div></a></li>
-                    <li><a href="/Categorie"><div class="parent-icon"><i class='bx bx-category'></i></div><div class="menu-title">Gestion des Catégories</div></a></li>
-                    <li><a href="/SCategorie"><div class="parent-icon"><i class='bx bxs-category-alt'></i></div><div class="menu-title">Gestion des Sous Catégories</div></a></li>
-                    <li><a href="/Produit/admin"><div class="parent-icon"><i class='bx bx-shopping-bag'></i></div><div class="menu-title">Gestion des Produits</div></a></li>
+                    <li class="menu-label">Gestion Horizons Travel</li>
+                    <li><a href="{{route('users.index')}}"><div class="parent-icon"><i class='bx bx-user-circle'></i></div><div class="menu-title">Gestion des Utilisateurs</div></a></li>
+                    <li><a href="{{route('agences.index')}}"><div class="parent-icon"><i class='bx bx-user-circle'></i></div><div class="menu-title">Gestion des Agences</div></a></li>
+                    <li><a href="{{route('hotels.index')}}"><div class="parent-icon"><i class='bx bx-category'></i></div><div class="menu-title">Gestion des Hôtels</div></a></li>
+                    <li><a href="/SCategorie"><div class="parent-icon"><i class='bx bxs-category-alt'></i></div><div class="menu-title">Gestion des Réservations</div></a></li>
+                    <li><a href="/Produit/admin"><div class="parent-icon"><i class='bx bx-shopping-bag'></i></div><div class="menu-title">Gestion des Avis</div></a></li>
                     <li>
                         <a href="javascript:;" class="has-arrow"><div class="parent-icon"><i class='bx bxs-cart'></i></div><div class="menu-title">Gestion des Commandes</div></a>
                         <ul>
