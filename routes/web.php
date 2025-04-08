@@ -11,7 +11,7 @@ use App\Http\Controllers\ChambreController;
 use App\Http\Controllers\ReservationController;
 
 Route::get('/', [App\Http\Controllers\PublicController::class, 'index']);
-
+Route::get('/client/hotels', [App\Http\Controllers\PublicController::class, 'hotels']);
 // ************* Partie Client *************
 
 

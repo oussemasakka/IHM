@@ -11,4 +11,9 @@ class PublicController extends Controller
         $hotels = Hotel::all();
         return view('Client.welcome', compact('hotels'));
     }
+    public function hotels()
+    {
+        $hotels = Hotel::all();
+        return view('Client.Hotels', compact('hotels'));    
+    }
 }

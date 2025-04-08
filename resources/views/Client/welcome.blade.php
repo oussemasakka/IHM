@@ -6,13 +6,13 @@
     <section class="hero-layout1">
         <div>
           <div class="vs-carousel hero-slider2" data-slide-show="1" data-fade="true">
-            <div class="hero-slide hero-mask" data-bg-src="{{ asset('assets/img/banner/hero2-bg.jpg') }}">
+            <div class="hero-slide hero-mask" data-bg-src="{{ asset('assets/img/bg4.png') }}">
               <div class="container">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-lg-6">
                     <div class="hero-content">
                       <span class="hero-subtitle">Let's Go Now</span>
-                      <h1 class="hero-title">Let’s Enjoy Your Trip With Travolo</h1>
+                      <h1 style="color: red" class="hero-title">Let’s Enjoy Your Trip With Travolo</h1>
                       <p class="hero-text">Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget
                         consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacignia convallis at tellus.</p>
                       <a href="about.html" class="vs-btn style4">Read More</a>
@@ -21,7 +21,6 @@
                   <div class="col-lg-6">
                     <div class="hero-form2" data-bg-src="assets/img/banner/map-bg.png">
                       <div class="shape-mockup">
-                        <img src="assets/img/banner/hero-object.png" alt="hero image">
                       </div>
                       <div>
                         <label class="h3">Where To?</label>
@@ -57,14 +56,15 @@
                         </div>
                       </div>
                       <div>
-                        <button class="vs-btn style4">Find Now</button>
+                        <center><button class="vs-btn style4">Find Now</button></center>
+         
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="hero-slide hero-mask" data-bg-src="assets/img/banner/hero2-bg2.jpg">
+            <div class="hero-slide hero-mask" data-bg-src="{{ asset('assets/img/bg2.png') }}">
               <div class="container">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-lg-6">
@@ -79,7 +79,7 @@
                   <div class="col-lg-6">
                     <div class="hero-form2" data-bg-src="assets/img/banner/map-bg.png">
                       <div class="shape-mockup">
-                        <img src="assets/img/banner/hero-object.png" alt="hero image">
+
                       </div>
                       <div>
                         <label class="h3">Where To?</label>
@@ -115,14 +115,14 @@
                         </div>
                       </div>
                       <div>
-                        <button class="vs-btn style4">Find Now</button>
+                        <center><button class="vs-btn style4">Find Now</button></center>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="hero-slide hero-mask" data-bg-src="assets/img/banner/hero2-bg3.jpg">
+            <div class="hero-slide hero-mask" data-bg-src="{{ asset('assets/img/bg3.png') }}">
               <div class="container">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-lg-6">
@@ -137,7 +137,6 @@
                   <div class="col-lg-6">
                     <div class="hero-form2" data-bg-src="assets/img/banner/map-bg.png">
                       <div class="shape-mockup">
-                        <img src="assets/img/banner/hero-object.png" alt="hero image">
                       </div>
                       <div>
                         <label class="h3">Where To?</label>
@@ -173,8 +172,7 @@
                         </div>
                       </div>
                       <div>
-                        <button class="vs-btn style4">Find Now</button>
-                      </div>
+                        <center><button class="vs-btn style4">Find Now</button></center>                      </div>
                     </div>
                   </div>
                 </div>

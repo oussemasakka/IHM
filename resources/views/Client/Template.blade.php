@@ -401,8 +401,6 @@
             </div>
             <div class="col-auto d-none d-xl-block">
               <div class="header-btns">
-                <button class="sideCartToggler"><i class="fal fa-shopping-bag"></i><span
-                    class="button-badge">2</span></button>
                 <button class="sideMenuToggler"><i class="fal fa-bars"></i></button>
               </div>
             </div>
