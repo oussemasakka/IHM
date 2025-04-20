@@ -178,7 +178,7 @@
         <div class="recent-post-wrap">
           <div class="recent-post">
             <div class="media-img">
-              <a href="blog-details.html"><img src="assets/img/blog/recent-post1.jpg" alt="Blog Image"></a>
+              <a href="blog-details.html"><img src="{{asset('assets/img/blog/recent-post1.jpg')}}" alt="Blog Image"></a>
             </div>
             <div class="media-body">
               <div class="recent-post-meta">
@@ -192,7 +192,7 @@
           </div>
           <div class="recent-post">
             <div class="media-img">
-              <a href="blog-details.html"><img src="assets/img/blog/recent-post2.jpg" alt="Blog Image"></a>
+              <a href="blog-details.html"><img src="{{asset('assets/img/blog/recent-post2.jpg')}}" alt="Blog Image"></a>
             </div>
             <div class="media-body">
               <div class="recent-post-meta">
@@ -206,7 +206,7 @@
           </div>
           <div class="recent-post">
             <div class="media-img">
-              <a href="blog-details.html"><img src="assets/img/blog/recent-post3.jpg" alt="Blog Image"></a>
+              <a href="blog-details.html"><img src="{{asset('assets/img/blog/recent-post3.jpg')}}" alt="Blog Image"></a>
             </div>
             <div class="media-body">
               <div class="recent-post-meta">
@@ -410,29 +410,14 @@
     </div>
   </header>
 
-
-   <!-- ==============================
-    Content Of page 
   @yield('Content')
-==============================-->
 
-
-    <!-- ==============================
-    Testimonail Area Start 
-
-    Testimonail Area End 
-  ==============================-->
-
-
-  <!--==============================
-	  Footer Area
-	============================== -->
   <footer class="footer-wrapper footer-layout1 shape-mockup-wrap">
     <div class="shape-mockup d-none d-xl-block jump z-index-negative" data-top="20%" data-left="0%">
-      <img src="assets/img/shape/tree-left.png" alt="svg">
+      <img src="{{asset('assets/img/shape/tree-left.png')}}" alt="svg">
     </div>
     <div class="shape-mockup d-none d-xl-block jump z-index-negative" data-top="20%" data-right="0%">
-      <img src="assets/img/shape/tree-right.png" alt="svg">
+      <img src="{{asset('assets/img/shape/tree-right.png')}}" alt="svg">
     </div>
     <div class="container ">
       <div class="footer-newsletter2 space-top">
@@ -440,7 +425,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="newsletter-style2">
               <div class="newsletter-img">
-                <img src="assets/img/shape/call.png" alt="image">
+                <img src="{{asset('assets/img/shape/call.png')}}" alt="image">
               </div>
               <h3 class="newsletter-text">Call Us 24/7</h3>
               <a href="tel:+8801234567890">+88 (0) 1234 567890</a>
@@ -449,7 +434,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="newsletter-style2">
               <div class="newsletter-img">
-                <img src="assets/img/shape/share.png" alt="image">
+                <img src="{{asset('assets/img/shape/share.png')}}" alt="image">
               </div>
               <h3 class="newsletter-text">Subscribe</h3>
               <a href="#">Sign up for daily update</a>
@@ -471,7 +456,7 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="index.html"><img src="assets/img/white-logo.svg" alt="Travolo" class="logo" /></a>
+                  <a href="index.html"><img src="{{asset('assets/img/white-logo.svg')}}" alt="Travolo" class="logo" /></a>
                 </div>
                 <p class="footer-text">Curabitur aliquet quam id dui bandit posuere blandit. Vivamfdsus magna justo
                   blandit aliquet.</p>
@@ -515,17 +500,17 @@
             <div class="widget footer-widget">
               <h4 class="widget_title">Our Instagram</h4>
               <div class="sidebar-gallery">
-                <a href="assets/img/footer/insta1.jpg" class="popup-image"><img src="assets/img/footer/insta1.jpg" alt="Gallery Image" class="w-100" />
+                <a href="{{asset('assets/img/footer/insta1.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta1.jpg')}}" alt="Gallery Image" class="w-100" />
                 </a>
-                <a href="assets/img/footer/insta2.jpg" class="popup-image"><img src="assets/img/footer/insta2.jpg" alt="Gallery Image" class="w-100" />
+                <a href="{{asset('assets/img/footer/insta2.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta2.jpg')}}" alt="Gallery Image" class="w-100" />
                 </a>
-                <a href="assets/img/footer/insta3.jpg" class="popup-image"><img src="assets/img/footer/insta3.jpg" alt="Gallery Image" class="w-100" />
+                <a href="{{asset('assets/img/footer/insta3.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta3.jpg')}}" alt="Gallery Image" class="w-100" />
                 </a>
-                <a href="assets/img/footer/insta4.jpg" class="popup-image"><img src="assets/img/footer/insta4.jpg" alt="Gallery Image" class="w-100" />
+                <a href="{{asset('assets/img/footer/insta4.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta4.jpg')}}" alt="Gallery Image" class="w-100" />
                 </a>
-                <a href="assets/img/footer/insta5.jpg" class="popup-image"><img src="assets/img/footer/insta5.jpg" alt="Gallery Image" class="w-100" />
+                <a href="{{asset('assets/img/footer/insta5.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta5.jpg')}}" alt="Gallery Image" class="w-100" />
                 </a>
-                <a href="assets/img/footer/insta6.jpg" class="popup-image"><img src="assets/img/footer/insta6.jpg" alt="Gallery Image" class="w-100" />
+                <a href="{{asset('assets/img/footer/insta6.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta6.jpg')}}" alt="Gallery Image" class="w-100" />
                 </a>
               </div>
             </div>
