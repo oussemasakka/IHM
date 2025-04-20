@@ -221,12 +221,12 @@
         <div class="shape-mockup d-none d-xl-block jump z-index-negative" data-bottom="15%" data-right="5%">
           <img src="assets/img/shape/Lines.png" alt="svg">
         </div>
-        <div class="container">
+        <div id="about" class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-xl-5">
               <div class="about-content">
                 <div class="title-area">
-                  <span class="sec-subtitle">We are Travolo</span>
+                  <span  class="sec-subtitle">We are Travolo</span>
                   <h2 class="sec-title h1">We Are The Best For Your Travel </h2>
                   <p class="sec-text">Blienum nhaedrum torquatos nec eul, vis detraxit periculis ex, nihil is in mei. Xei an
                     periculaeuripidis, fincartem ei est. Dlienum phaed is in mei. Lei an Hericulaeuripidis, hincartem ei
@@ -300,7 +300,7 @@
         <div class="shape-mockup d-none d-xl-block ripple-animation z-index-negative" data-bottom="10%" data-right="13%">
           <img src="assets/img/shape/circle.png" alt="svg">
         </div>
-        <div class="container">
+        <div id="services" class="container">
           <div class="row">
             <div class="col-xl-3 col-md-6 col-sm-6 col-12">
               <div class="features-style1">

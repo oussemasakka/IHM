@@ -61,11 +61,15 @@
           <li class="menu">
             <a href="/">Home</a>
           </li>
-
+          <li class="menu">
+            <a href="/#about">About us</a>
+          </li>
+          <li class="menu">
+            <a href="/#services">Our Services</a>
+          </li>
           <li class="menu">
             <a href="/client/hotels">Hotels</a>
           </li>
-       
           <li>
             <a href="/contact">Contact</a>
           </li>
@@ -193,6 +197,15 @@
                 <ul>
                   <li class="menu">
                     <a href="/">Home</a>
+                  </li>
+
+                  <li class="menu">
+                    <a href="/#about">About us</a>
+                  </li>
+
+
+                  <li class="menu">
+                    <a href="/#services">Our Services</a>
                   </li>
 
                   <li class="menu">
