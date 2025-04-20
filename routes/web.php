@@ -15,6 +15,8 @@ Route::get('/contact', [App\Http\Controllers\PublicController::class, 'contact']
 Route::get('/client/hotels', [App\Http\Controllers\PublicController::class, 'hotels']);
 Route::get('/client/hotels/details/{id}', [App\Http\Controllers\PublicController::class, 'details']);
 Route::get('/client/hotels/checkout/{id}', [App\Http\Controllers\PublicController::class, 'checkout']);
+Route::post('/reservation/add', [ReservationController::class, 'store'])->name('reservation.store');
+Route::get('/Mes/reservations', [ReservationController::class, 'mesResevation']);
 // ************* Partie Client *************
 
 

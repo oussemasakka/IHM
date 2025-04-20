@@ -131,24 +131,39 @@
                 <!--navigation-->
                 <ul class="metismenu" id="menu">
                     <li><a href="/home"><div class="parent-icon"><i class='bx bx-home-circle'></i></div><div class="menu-title">Dashboard</div></a></li>
+                    
                     <li class="menu-label">Gestion Horizons Travel</li>
-                    <li><a href="{{route('users.index')}}"><div class="parent-icon"><i class='bx bx-user-circle'></i></div><div class="menu-title">Gestion des Utilisateurs</div></a></li>
-                    <li><a href="{{route('agences.index')}}"><div class="parent-icon"><i class='bx bx-user-circle'></i></div><div class="menu-title">Gestion des Agences</div></a></li>
-                    <li><a href="{{route('hotels.index')}}"><div class="parent-icon"><i class='bx bx-category'></i></div><div class="menu-title">Gestion des Hôtels</div></a></li>
-                    <li><a href="/SCategorie"><div class="parent-icon"><i class='bx bxs-category-alt'></i></div><div class="menu-title">Gestion des Réservations</div></a></li>
-                    <li><a href="/Produit/admin"><div class="parent-icon"><i class='bx bx-shopping-bag'></i></div><div class="menu-title">Gestion des Avis</div></a></li>
-                    <li>
-                        <a href="javascript:;" class="has-arrow"><div class="parent-icon"><i class='bx bxs-cart'></i></div><div class="menu-title">Gestion des Commandes</div></a>
-                        <ul>
-                            <li><a href="/commande/all"><i class="bx bx-right-arrow-alt"></i>Tous les Commandes</a></li>
-                            <li><a href="/commande/Commandes en attente"><i class="bx bx-right-arrow-alt"></i>Commandes en attente</a></li>
-                            <li><a href="/commande/Commandes confirmées"><i class="bx bx-right-arrow-alt"></i>Commandes confirmées</a></li>
-                            <li><a href="/commande/Commandes livrées"><i class="bx bx-right-arrow-alt"></i>Commandes livrées</a></li>
-                            <li><a href="/commande/Commandes retour"><i class="bx bx-right-arrow-alt"></i>Commandes retour</a></li>
-                        </ul>
-                    </li>
+                    
+                    <!-- Gestion des Utilisateurs - Visible sauf pour les clients -->
+                    @if(Auth::user()->role != 'client')
+                        <li><a href="{{route('users.index')}}"><div class="parent-icon"><i class='bx bx-user-circle'></i></div><div class="menu-title">Gestion des Utilisateurs</div></a></li>
+                    @endif
+                    
+                    <!-- Gestion des Agences - Visible sauf pour les clients -->
+                    @if(Auth::user()->role != 'client')
+                        <li><a href="{{route('agences.index')}}"><div class="parent-icon"><i class='bx bx-user-circle'></i></div><div class="menu-title">Gestion des Agences</div></a></li>
+                    @endif
+                    
+                    <!-- Gestion des Hôtels - Visible sauf pour les clients -->
+                    @if(Auth::user()->role != 'client')
+                        <li><a href="{{route('hotels.index')}}"><div class="parent-icon"><i class='bx bx-category'></i></div><div class="menu-title">Gestion des Hôtels</div></a></li>
+                    @endif
+                    
+                    <!-- Gestion des Réservations - Visible sauf pour les clients -->
+                    @if(Auth::user()->role != 'client')
+                        <li><a href="/Mes/reservations"><div class="parent-icon"><i class='bx bxs-category-alt'></i></div><div class="menu-title">Gestion des Réservations</div></a></li>
+                    @endif
+                    
+                    <!-- Gestion des Avis - Visible sauf pour les clients -->
+                    @if(Auth::user()->role != 'client')
+                        <li><a href="/Produit/admin"><div class="parent-icon"><i class='bx bx-shopping-bag'></i></div><div class="menu-title">Gestion des Avis</div></a></li>
+                    @endif
+                    <li><a href="/Mes/reservations" target="_blank"><div class="parent-icon"><i class="bx bx-shopping-bag"></i></div><div class="menu-title">Mes Reservations</div></a></li>
+
+                    <!-- Support - Visible pour tous les utilisateurs -->
                     <li><a href="https://www.facebook.com/profile.php?id=61566835768353" target="_blank"><div class="parent-icon"><i class="bx bx-support"></i></div><div class="menu-title">Support</div></a></li>
                 </ul>
+                
                 <!--end navigation-->
             </div>
             <!--end sidebar wrapper -->

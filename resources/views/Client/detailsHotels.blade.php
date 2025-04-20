@@ -170,47 +170,48 @@
     
   
     
-                        <!-- Comment Form -->
-                        <div class="vs-comment-form">
-                          <div id="respond" class="comment-respond">
-                            <h3 class="blog-inner-title">Post a Comment</h3>
-    
-                            <div class="row rating-post">
+                    <!-- Comment Form -->
+@if(Auth::check())
+<div class="vs-comment-form">
+  <div id="respond" class="comment-respond">
+    <h3 class="blog-inner-title">Post a Comment</h3>
 
-                              <div class="col-md-4 col-sm-6 col-auto">
-                                <div class="form-group rating-select">
-                                  <label>Stars</label>
-                                  <p class="stars">
-                                    <span>
-                                      <a class="star-1" href="#">1</a>
-                                      <a class="star-2" href="#">2</a>
-                                      <a class="star-3" href="#">3</a>
-                                      <a class="star-4" href="#">4</a>
-                                      <a class="star-5" href="#">5</a>
-                                    </span>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-    
-                            <div class="row">
-    
-                              <div class="col-12 form-group">
-                                <textarea class="form-control" placeholder="Write Your Comment"></textarea>
-                              </div>
-                              <div class="col-12 ">
-                                <div class="custom-checkbox notice">
-                                  <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox"
-                                    value="yes">
-                                  <label for="wp-comment-cookies-consent"> Save my name, email, and website in this browser for the next time I comment.</label>
-                                </div>
-                              </div>
-                              <div class="col-12 form-group">
-                                <button class="vs-btn style4 w-100">Submit</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+    <div class="row rating-post">
+      <div class="col-md-4 col-sm-6 col-auto">
+        <div class="form-group rating-select">
+          <label>Stars</label>
+          <p class="stars">
+            <span>
+              <a class="star-1" href="#">1</a>
+              <a class="star-2" href="#">2</a>
+              <a class="star-3" href="#">3</a>
+              <a class="star-4" href="#">4</a>
+              <a class="star-5" href="#">5</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 form-group">
+        <textarea class="form-control" placeholder="Write Your Comment"></textarea>
+      </div>
+      <div class="col-12 ">
+        <div class="custom-checkbox notice">
+          <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox"
+            value="yes">
+          <label for="wp-comment-cookies-consent"> Save my name, email, and website in this browser for the next time I comment.</label>
+        </div>
+      </div>
+      <div class="col-12 form-group">
+        <button class="vs-btn style4 w-100">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+
     
     
                       </div>

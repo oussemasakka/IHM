@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reservation extends Model
 {
+    protected $fillable = [
+        'user_id',
+        'chambre_id',
+        'date',
+        'status',
+    ];
+
     public function user() {
         return $this->belongsTo(User::class);
     }
