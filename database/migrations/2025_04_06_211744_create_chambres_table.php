@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('chambres', function (Blueprint $table) {
             $table->id();
             $table->integer('nbLit');
+            $table->string('numero');
             $table->string('vue');
             $table->foreignId('hotel_id')->constrained()->onDelete('cascade');
             $table->timestamps();

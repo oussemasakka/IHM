@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hotel;
 use App\Models\Chambre;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -20,11 +21,14 @@ class ChambreController extends Controller
     
     public function index() {
         $chambres = Chambre::all();
-        return view('Admin.chambres.index', compact('chambres'));
+      
+        return view('Admin.chambre.index', compact('chambres'));
     }
 
     public function create() {
-        return view('Admin.chambres.create');
+        $hotels = Hotel::all();
+
+        return view('Admin.chambre.create',compact('hotels'));
     }
 
     public function store(Request $request) {
@@ -34,15 +38,20 @@ class ChambreController extends Controller
             'hotel_id' => 'required|exists:hotels,id'
         ]);
         Chambre::create($data);
-        return redirect()->route('chambres.index');
+        return redirect()->route('chambre.index');
     }
 
-    public function show(Chambre $chambre) {
-        return view('Admin.chambres.show', compact('chambre'));
+    public function show( $chambre) {
+
+
+        $chambres = Chambre::where('hotel_id', $chambre)->get();
+     
+
+        return view('Admin.chambre.index', compact('chambres'));
     }
 
     public function edit(Chambre $chambre) {
-        return view('Admin.chambres.edit', compact('chambre'));
+        return view('Admin.chambre.edit', compact('chambre'));
     }
 
     public function update(Request $request, Chambre $chambre) {
@@ -52,12 +61,12 @@ class ChambreController extends Controller
             'hotel_id' => 'required|exists:hotels,id'
         ]);
         $chambre->update($data);
-        return redirect()->route('chambres.index');
+        return redirect()->route('chambre.index');
     }
 
     public function destroy(Chambre $chambre) {
         $chambre->delete();
-        return redirect()->route('chambres.index');
+        return redirect()->route('chambre.index');
     }
 }
 

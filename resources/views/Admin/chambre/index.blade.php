@@ -9,19 +9,18 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0 p-0">
                         <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Liste des Hôtels</li>
+                        <li class="breadcrumb-item active" aria-current="page">Liste des Chambres</li>
                     </ol>
                 </nav>
             </div>
         </div>
-        
 
         <div class="row">
             <div class="col-md-12">
-                <h6 class="mb-0 text-uppercase">Liste des Hôtels</h6>
+                <h6 class="mb-0 text-uppercase">Liste des Chambres</h6>
                 <hr/>
                 <div>
-                    <a href="{{ route('hotels.create') }}" class="btn btn-primary">Ajouter</a>
+                    <a href="{{ route('chambres.create') }}" class="btn btn-primary">Ajouter</a>
                 </div>
                 <br>
                 <div class="card">
@@ -30,40 +29,27 @@
                             <table id="example" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>Nom Hotel</th>
-                                        <th>Image Hotel</th>
-                                        <th>Adresse</th>
-                                        <th>Étoiles</th>
-                                        <th>Prix Moyen</th>
-                                        <th>Agence</th>
-                                        <th>Action</th>
+                                        <th>N° Chambre</th>
+                                        <th>Nb Lit</th>
+                                        <th>Vue</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($hotels as $hotel)
+                                    @foreach($chambres as $chambre)
                                     <tr>
-                                        <td>{{ $hotel->NomHotel }}</td>
+                                        <td>{{ $chambre->numero }}</td>
+                                        <td>{{ $chambre->nbLit }}</td>
+                                        <td>{{ $chambre->vue }}</td>
                                         <td>
-                                            @if($hotel->image)
-                                                <img src="{{ asset($hotel->image) }}" alt="Image de l'hôtel" width="100" height="100" style="object-fit: cover;">
-                                            @else
-                                                <span>Aucune image</span>
-                                            @endif
-                                        </td>
-                                        <td>{{ $hotel->adress }}</td>
-                                        <td>{{ $hotel->nombreEtoile }} ⭐</td>
-                                        <td>{{ $hotel->prixmoyen }} TND</td>
-                                        <td>{{ $hotel->agence->NomAgence ?? '-' }}</td>
-                                        <td>
-                                            
-                                            <a class="btn btn-warning btn-sm" href="{{ route('hotels.edit', $hotel->id) }}">
+                                            <a class="btn btn-warning btn-sm" href="{{ route('chambres.edit', $chambre->id) }}">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                                 </svg>
                                             </a>
 
-                                            <form action="{{ route('hotels.destroy', $hotel->id) }}" method="POST" style="display:inline;">
+                                            <form action="{{ route('chambres.destroy', $chambre->id) }}" method="POST" style="display:inline;">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Confirmer la suppression ?')">
@@ -72,25 +58,16 @@
                                                     </svg>
                                                 </button>
                                             </form>
-                                            <a class="btn btn-info btn-sm" href="{{ route('chambres.show', $hotel->id) }}">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed" viewBox="0 0 16 16">
-                                                    <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z"/>
-                                                    <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z"/>
-                                                  </svg>
-                                            </a>
                                         </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <th>Nom Hotel</th>
-                                        <th>Image Hotel</th>
-                                        <th>Adresse</th>
-                                        <th>Étoiles</th>
-                                        <th>Prix Moyen</th>
-                                        <th>Agence</th>
-                                        <th>Action</th>
+                                        <th>N° Chambre</th>
+                                        <th>Nb Lit</th>
+                                        <th>Vue</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -103,4 +80,3 @@
     </div>
 </div>
 @endsection
-

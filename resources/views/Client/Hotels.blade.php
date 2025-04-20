@@ -43,7 +43,7 @@
                 <div class="col-xl-4 col-lg-6 col-sm-6 filter-item hightTolow">
                   <div class="package-style1">
                     <div class="package-img">
-                      <a href="tour-booking.html"><img src="{{ asset($hotel->image) }}" alt="Package Image"></a>
+                      <a href="/client/hotels/details/{{$hotel->id}}"><img src="{{ asset($hotel->image) }}" alt="Package Image"></a>
                     </div>
                     <div class="package-content">
                       <div class="package-review">
@@ -55,7 +55,7 @@
                             @endif
                         @endfor
                     </div>
-                      <h3 class="package-title"><a href="tour-booking.html">{{$hotel->NomHotel}}</a></h3>
+                      <h3 class="package-title"><a href="/client/hotels/details/{{$hotel->id}}">{{$hotel->NomHotel}}</a></h3>
                       <p class="package-text">{{$hotel->adress}}</p>
                       <div class="package-meta">
                         <a href="#"><i class="fas fa-calendar-alt"></i> Days: 4</a>
@@ -63,7 +63,7 @@
                       </div>
                       <div class="package-footer">
                         <span class="package-price">{{$hotel->prixmoyen}} DT</span>
-                        <a href="tour-booking.html" class="vs-btn">View Details</a>
+                        <a href="/client/hotels/details/{{$hotel->id}}" class="vs-btn">View Details</a>
                       </div>
                     </div>
                   </div>

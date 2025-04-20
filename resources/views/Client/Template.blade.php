@@ -54,12 +54,12 @@
     <div class="vs-menu-area text-center">
       <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
       <div class="mobile-logo">
-        <a href="index.html"><img src="{{ asset('assets/img/logo1.png') }}" alt="Travolo"></a>
+        <a href="/"><img src="{{ asset('assets/img/logo1.png') }}" alt="Travolo"></a>
       </div>
       <div class="vs-mobile-menu">
         <ul>
           <li class="menu-item-has-children">
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
             <ul class="sub-menu">
               <li><a href="index.html">Home One</a></li>
               <li><a href="index-2.html">Home Two</a></li>
@@ -159,7 +159,7 @@
       <div class="widget">
         <div class="vs-widget-about">
           <div class="footer-logo">
-            <a href="index.html"><img src="{{ asset('assets/img/logo1.png') }}" alt="Travolo"></a>
+            <a href="/"><img src="{{ asset('assets/img/logo1.png') }}" alt="Travolo"></a>
           </div>
           <p class="footer-text">
             Ut tellus dolor, dapibus eget, elementum ifend cursus eleifend,
@@ -304,7 +304,7 @@
           <div class="row align-items-center justify-content-between">
             <div class="col-auto">
               <div class="vs-logo">
-                <a href="index.html"><img src="{{ asset('assets/img/logo1.png') }}" width="170px" alt="logo"></a>
+                <a href="/"><img src="{{ asset('assets/img/logo1.png') }}" width="170px" alt="logo"></a>
               </div>
             </div>
             <div class="col text-end text-xl-center">
@@ -313,7 +313,7 @@
                   <li class="menu-item-has-children">
                     <a href="#">Home</a>
                     <ul class="sub-menu">
-                      <li><a href="index.html">Home One</a></li>
+                      <li><a href="/">Home One</a></li>
                       <li><a href="index-2.html">Home Two</a></li>
                       <li><a href="index-3.html">Home Three</a></li>
                     </ul>
@@ -331,7 +331,7 @@
                       <li>
                         <a href="shop.html">Pagelist 1</a>
                         <ul>
-                          <li><a href="index.html">Home One</a></li>
+                          <li><a href="/">Home One</a></li>
                           <li><a href="index-2.html">Home Two</a></li>
                           <li><a href="index-3.html">Home Three</a></li>
                           <li><a href="about.html">About Us</a></li>
@@ -428,7 +428,7 @@
                 <img src="{{asset('assets/img/shape/call.png')}}" alt="image">
               </div>
               <h3 class="newsletter-text">Call Us 24/7</h3>
-              <a href="tel:+8801234567890">+88 (0) 1234 567890</a>
+              <a href="tel:+8801234567890">+216 22 100 200</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
@@ -456,15 +456,12 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="index.html"><img src="{{asset('assets/img/white-logo.svg')}}" alt="Travolo" class="logo" /></a>
+                  <a href="/"><img src="{{ asset('assets/img/logowhite.png') }}" alt="Travolo" class="logo" /></a>
                 </div>
-                <p class="footer-text">Curabitur aliquet quam id dui bandit posuere blandit. Vivamfdsus magna justo
-                  blandit aliquet.</p>
+                <p class="footer-text">Travel Agency</p>
                 <div class="social-style1">
                   <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                   <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
               </div>
             </div>
@@ -474,7 +471,7 @@
               <h3 class="widget_title">Useful Links</h3>
               <div class="menu-all-pages-container">
                 <ul class="menu">
-                  <li><a href="index.html"><i class="far fa-angle-right"></i> Home</a></li>
+                  <li><a href="/"><i class="far fa-angle-right"></i> Home</a></li>
                   <li><a href="destinations.html"><i class="far fa-angle-right"></i> Destinations</a></li>
                   <li><a href="tours.html"><i class="far fa-angle-right"></i> Tour</a></li>
                   <li><a href="shop.html"><i class="far fa-angle-right"></i> Shop</a></li>
@@ -488,10 +485,9 @@
               <h3 class="widget_title">Contact</h3>
               <div class="menu-all-pages-container">
                 <ul class="menu">
-                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> Fifth Avenue 5501, Broadway, New York Morris
-                      Street.</a></li>
-                  <li><a href="#"><i class="fas fa-envelope"></i> info@travolo.com</a></li>
-                  <li><a href="#"><i class="fas fa-phone-alt"></i> +880 1234 567890</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i>Sfax , Tunisia</a></li>
+                  <li><a href="#"><i class="fas fa-envelope"></i> contact@horizons-travel.com</a></li>
+                  <li><a href="#"><i class="fas fa-phone-alt"></i> +216 22 100 200</a></li>
                 </ul>
               </div>
             </div>
@@ -522,8 +518,8 @@
       <div class="copyright-wrap">
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-auto">
-            <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> <script>document.write(new Date().getFullYear())</script> <a href="index.html">Travolo</a>.
-              All Rights Reserved By <a href="https://themeforest.net/user/vecuro">Vecuro</a></p>
+            <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> <script>document.write(new Date().getFullYear())</script> <a href="/">HORIZONS TRAVEL</a>.
+              All Rights Reserved By <a href="https://iit.tn/">IIT</a></p>
           </div>
           <div class="col-auto d-none d-lg-block">
             <div class="copyright-menu">

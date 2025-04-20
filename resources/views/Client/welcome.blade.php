@@ -232,7 +232,7 @@
                     @endfor
                 </div>
                 
-                  <h3 class="package-title"><a href="tour-booking.html">{{$hotel->NomHotel}}</a></h3>
+                  <h3 class="package-title"><a href="/client/hotels/details/{{$hotel->id}}">{{$hotel->NomHotel}}</a></h3>
                   <p class="package-text">{{$hotel->adress}}</p>
                   <div class="package-meta">
                     <a href="#"><i class="fas fa-calendar-alt"></i> Days: 4</a>
@@ -240,7 +240,7 @@
                   </div>
                   <div class="package-footer">
                     <span class="package-price">{{$hotel->prixmoyen}} DT </span>
-                    <a href="tour-booking.html" class="vs-btn style4">View Details</a>
+                    <a href="/client/hotels/details/{{$hotel->id}}" class="vs-btn style4">View Details</a>
                   </div>
                 </div>
               </div>
@@ -254,7 +254,7 @@
       
           </div>
           <div class="text-center pt-lg-2">
-            <a href="tours.html" class="vs-btn">View More</a>
+            <a href="/client/hotels" class="vs-btn">View More</a>
           </div>
         </div>
       </section>
@@ -298,7 +298,7 @@
                   <li>peric uripidis, fincartem.</li>
                   <li>pericu laeuri pidis Mei sm.</li>
                 </ul>
-                <a href="about.html" class="vs-btn style4 ">View More</a>
+                <a href="/client/hotels" class="vs-btn style4 ">View More</a>
               </div>
             </div>
             <div class="col-xl-6">
@@ -453,85 +453,7 @@
          Special Offer Area End 
       ==============================-->
     
-      <!--==============================
-         Destiniations Area Start 
-      ==============================-->
-      <section class="space space-extra-bottom bg-light shape-mockup-wrap" data-bg-src="assets/img/shape/Bg.png">
-        <div class="shape-mockup d-none d-xl-block spin z-index-negative" data-top="-20%" data-right="-8%">
-          <img src="assets/img/shape/circle1.png" alt="circle">
-        </div>
-        <div class="shape-mockup d-none d-xl-block  z-index-negative" data-bottom="13%" data-left="0%">
-          <img src="assets/img/shape/walk.png" alt="circle">
-        </div>
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-lg-5">
-              <div class="title-area">
-                <span class="sec-subtitle">Top Destination</span>
-                <h2 class="sec-title h1">Unforgettable Cities</h2>
-                <p class="sec-text">Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget
-                  consectetur sed,
-                  convgallis at tellus.</p>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="sec-btns">
-                <button class="icon-btn" data-slick-prev=".destinationSlide"><i class="fas fa-chevron-left"></i></button>
-                <button class="icon-btn" data-slick-next=".destinationSlide"><i class="fas fa-chevron-right"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="row destinationSlide vs-carousel" data-slide-show="3" data-arrows="false" data-lg-slide-show="2"
-            data-md-slide-show="2" data-sm-slide-show="1">
-            <div class="col-xl-4">
-              <div class="destination-style1">
-                <a href="destination-details.html"> <img src="assets/img/destinations/destinations-1-1.jpg" alt="destination image"></a>
-                <span class="destination-price">$259</span>
-                <div class="destination-info">
-                  <h4 class="destination-name"><a href="#">Thailand</a></h4>
-                  <p class="destination-text">Explore Sea & Get Relax</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="destination-style1">
-                <a href="destination-details.html"> <img src="assets/img/destinations/destinations-1-2.jpg" alt="destination image"></a>
-                <span class="destination-price">$369</span>
-                <div class="destination-info">
-                  <h4 class="destination-name"><a href="#">Japan</a></h4>
-                  <p class="destination-text">Explore Sea & Get Relax</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="destination-style1">
-                <a href="destination-details.html"> <img src="assets/img/destinations/destinations-1-3.jpg" alt="destination image"></a>
-                <span class="destination-price">$299</span>
-                <div class="destination-info">
-                  <h4 class="destination-name"><a href="#">Spain</a></h4>
-                  <p class="destination-text">Explore Sea & Get Relax</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="destination-style1">
-                <a href="destination-details.html">
-                  <img src="assets/img/destinations/destinations-1-8.jpg" alt="destination image" /></a>
-                <span class="destination-price">$158</span>
-                <div class="destination-info">
-                  <h4 class="destination-name"><a href="#">Mexico</a></h4>
-                  <p class="destination-text">Explore World & Get Relax</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--==============================
-         Destinations Area End 
-      ==============================-->
 
-      ==============================-->
       <section class="space testimonial-style2" data-bg-src="assets/img/bg/testimonial-bg-2.jpg">
         <div class="container">
           <div class="row">
@@ -692,7 +614,7 @@
           </div>
         </div>
         <div class="text-center mb-30 wow fadeInUp pt-lg-2" data-wow-delay="0.7s">
-          <a href="blog-grid.html" class="vs-btn">View More</a>
+          <a href="/client/hotels" class="vs-btn">View More</a>
         </div>
       </div>
     </section>

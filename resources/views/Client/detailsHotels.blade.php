@@ -74,6 +74,7 @@
                         feugiat. Nulla quis lorem ut libero malesuada feugiat. Curabitur porttitor lectus nibh. Nulla quis
                         lorem ut libero malesuada feugiat aliquet quam id dui posuere blandit. Nulla quis lorem ut libero
                         malesuada feugiat malesuada. Nulla porttitor lectus nibh.</p>
+                        <a href="/client/hotels/checkout/{{$hotel->id}}"  class="vs-btn style4 w-100">Resever</a>
 
                     </div>
                     <div class="filter-item tab-content2">
@@ -148,11 +149,12 @@
                       <h2 class="tab-title">Reviews Scores and Score Breakdown</h2>
                       <p class="tab-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
                         eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus</p>
+                        nascetur ridiculus mus</p>           
     
                
-    
+                 
                       <div class="rating-wrap">
+          
                         <div class="rating-author">
                           <div class="author-image">
                             <img src="{{asset('assets/img/author/rating-author.jpg')}}" alt="Rating Author">
