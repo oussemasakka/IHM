@@ -27,6 +27,9 @@ class PublicController extends Controller
         $chambres = Chambre::where('hotel_id', $id)->get();
         $hotel = Hotel::find($id);
         return view('Client.checkout', compact('hotel','chambres'));   
-
+    }
+    public function contact()
+    {
+        return view('Client.contact');
     }
 }

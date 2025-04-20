@@ -58,90 +58,18 @@
       </div>
       <div class="vs-mobile-menu">
         <ul>
-          <li class="menu-item-has-children">
+          <li class="menu">
             <a href="/">Home</a>
-            <ul class="sub-menu">
-              <li><a href="index.html">Home One</a></li>
-              <li><a href="index-2.html">Home Two</a></li>
-              <li><a href="index-3.html">Home Three</a></li>
-            </ul>
           </li>
-          <li class="menu-item-has-children">
-            <a href="#">Destinations</a>
-            <ul class="sub-menu">
-              <li><a href="destinations.html">Destinations</a></li>
-              <li><a href="destination-details.html">Destinations Details</a></li>
-            </ul>
+
+          <li class="menu">
+            <a href="/client/hotels">Hotels</a>
           </li>
-          <li class="menu-item-has-children mega-menu-wrap">
-            <a href="#">Pages</a>
-            <ul class="mega-menu">
-              <li>
-                <a href="shop.html">Pagelist 1</a>
-                <ul>
-                  <li><a href="index.html">Home One</a></li>
-                  <li><a href="index-2.html">Home Two</a></li>
-                  <li><a href="index-3.html">Home Three</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Pagelist 2</a>
-                <ul>
-                  <li><a href="destinations.html">Destinations</a></li>
-                  <li><a href="destination-details.html">Destinations Details</a></li>
-                  <li><a href="tours.html">Tours List</a></li>
-                  <li><a href="tour-booking.html">Tour Booking</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Pagelist 3</a>
-                <ul>
-                  <li><a href="shop.html">Shop</a></li>
-                  <li><a href="shop-details.html">Shop Details</a></li>
-                  <li><a href="cart.html">Cart</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Pagelist 4</a>
-                <ul>
-                  <li><a href="blog.html">Blog List</a></li>
-                  <li><a href="blog-grid.html">Blog Grid</a></li>
-                  <li><a href="blog-details.html">Blog Details</a></li>
-                  <li><a href="error.html">Error Page</a></li>
-                  <li><a href="signin.html">Sign In</a></li>
-                  <li><a href="sign-up.html">Sign Up</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Tours</a>
-            <ul class="sub-menu">
-              <li><a href="tours.html">Tours List</a></li>
-              <li><a href="tour-booking.html">Tour Booking</a></li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Shop</a>
-            <ul class="sub-menu">
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="shop-details.html">Shop Details</a></li>
-              <li><a href="cart.html">Cart</a></li>
-              <li><a href="checkout.html">Checkout</a></li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Blog</a>
-            <ul class="sub-menu">
-              <li><a href="blog.html">Blog List</a></li>
-              <li><a href="blog-grid.html">Blog Grid</a></li>
-              <li><a href="blog-details.html">Blog Details</a></li>
-            </ul>
-          </li>
+       
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="/contact">Contact</a>
+          </li>
+          </ul>
           </li>
         </ul>
       </div>
@@ -170,53 +98,6 @@
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="widget">
-        <h3 class="widget_title">Recent Articles</h3>
-        <div class="recent-post-wrap">
-          <div class="recent-post">
-            <div class="media-img">
-              <a href="blog-details.html"><img src="{{asset('assets/img/blog/recent-post1.jpg')}}" alt="Blog Image"></a>
-            </div>
-            <div class="media-body">
-              <div class="recent-post-meta">
-                <i class="fal fa-calendar-alt"></i>
-                <a href="blog.html">December 15, 2022</a>
-              </div>
-              <h4 class="post-title">
-                <a class="text-inherit" href="blog-details.html">We are Giving Amazing Tour for VIP</a>
-              </h4>
-            </div>
-          </div>
-          <div class="recent-post">
-            <div class="media-img">
-              <a href="blog-details.html"><img src="{{asset('assets/img/blog/recent-post2.jpg')}}" alt="Blog Image"></a>
-            </div>
-            <div class="media-body">
-              <div class="recent-post-meta">
-                <i class="fal fa-calendar-alt"></i>
-                <a href="blog.html">March 13, 2022</a>
-              </div>
-              <h4 class="post-title">
-                <a class="text-inherit" href="blog-details.html">The journey journal chronicles of a wandering soul</a>
-              </h4>
-            </div>
-          </div>
-          <div class="recent-post">
-            <div class="media-img">
-              <a href="blog-details.html"><img src="{{asset('assets/img/blog/recent-post3.jpg')}}" alt="Blog Image"></a>
-            </div>
-            <div class="media-body">
-              <div class="recent-post-meta">
-                <i class="fal fa-calendar-alt"></i>
-                <a href="blog.html">Augest 23, 2022</a>
-              </div>
-              <h4 class="post-title">
-                <a class="text-inherit" href="blog-details.html">Roam And Revel captivating at tellus.</a>
-              </h4>
-            </div>
           </div>
         </div>
       </div>
@@ -310,90 +191,16 @@
             <div class="col text-end text-xl-center">
               <nav class="main-menu  menu-style1 d-none d-lg-block">
                 <ul>
-                  <li class="menu-item-has-children">
-                    <a href="#">Home</a>
-                    <ul class="sub-menu">
-                      <li><a href="/">Home One</a></li>
-                      <li><a href="index-2.html">Home Two</a></li>
-                      <li><a href="index-3.html">Home Three</a></li>
-                    </ul>
+                  <li class="menu">
+                    <a href="/">Home</a>
                   </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Destinations</a>
-                    <ul class="sub-menu">
-                      <li><a href="destinations.html">Destinations</a></li>
-                      <li><a href="destination-details.html">Destinations Details</a></li>
-                    </ul>
+
+                  <li class="menu">
+                    <a href="/client/hotels">Hotels</a>
                   </li>
-                  <li class="menu-item-has-children mega-menu-wrap">
-                    <a href="#">Pages</a>
-                    <ul class="mega-menu">
-                      <li>
-                        <a href="shop.html">Pagelist 1</a>
-                        <ul>
-                          <li><a href="/">Home One</a></li>
-                          <li><a href="index-2.html">Home Two</a></li>
-                          <li><a href="index-3.html">Home Three</a></li>
-                          <li><a href="about.html">About Us</a></li>
-                          <li><a href="error.html">Error Page</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Pagelist 2</a>
-                        <ul>
-                          <li><a href="destinations.html">Destinations</a></li>
-                          <li><a href="destination-details.html">Destinations Details</a></li>
-                          <li><a href="tours.html">Tours List</a></li>
-                          <li><a href="tour-booking.html">Tour Booking</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Pagelist 3</a>
-                        <ul>
-                          <li><a href="shop.html">Shop</a></li>
-                          <li><a href="shop-details.html">Shop Details</a></li>
-                          <li><a href="cart.html">Cart</a></li>
-                          <li><a href="checkout.html">Checkout</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Pagelist 4</a>
-                        <ul>
-                          <li><a href="blog.html">Blog List</a></li>
-                          <li><a href="blog-grid.html">Blog Grid</a></li>
-                          <li><a href="blog-details.html">Blog Details</a></li>
-                          <li><a href="signin.html">Sign In</a></li>
-                          <li><a href="sign-up.html">Sign Up</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Tours</a>
-                    <ul class="sub-menu">
-                      <li><a href="tours.html">Tours List</a></li>
-                      <li><a href="tour-booking.html">Tour Booking</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Shop</a>
-                    <ul class="sub-menu">
-                      <li><a href="shop.html">Shop</a></li>
-                      <li><a href="shop-details.html">Shop Details</a></li>
-                      <li><a href="cart.html">Cart</a></li>
-                      <li><a href="checkout.html">Checkout</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="sub-menu">
-                      <li><a href="blog.html">Blog List</a></li>
-                      <li><a href="blog-grid.html">Blog Grid</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
+               
                   <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="/contact">Contact</a>
                   </li>
                 </ul>
               </nav>
@@ -462,6 +269,7 @@
                 <div class="social-style1">
                   <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                   <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
               </div>
             </div>
@@ -492,25 +300,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3">
-            <div class="widget footer-widget">
-              <h4 class="widget_title">Our Instagram</h4>
-              <div class="sidebar-gallery">
-                <a href="{{asset('assets/img/footer/insta1.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta1.jpg')}}" alt="Gallery Image" class="w-100" />
-                </a>
-                <a href="{{asset('assets/img/footer/insta2.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta2.jpg')}}" alt="Gallery Image" class="w-100" />
-                </a>
-                <a href="{{asset('assets/img/footer/insta3.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta3.jpg')}}" alt="Gallery Image" class="w-100" />
-                </a>
-                <a href="{{asset('assets/img/footer/insta4.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta4.jpg')}}" alt="Gallery Image" class="w-100" />
-                </a>
-                <a href="{{asset('assets/img/footer/insta5.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta5.jpg')}}" alt="Gallery Image" class="w-100" />
-                </a>
-                <a href="{{asset('assets/img/footer/insta6.jpg')}}" class="popup-image"><img src="{{asset('assets/img/footer/insta6.jpg')}}" alt="Gallery Image" class="w-100" />
-                </a>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>

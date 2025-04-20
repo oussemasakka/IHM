@@ -11,6 +11,7 @@ use App\Http\Controllers\ChambreController;
 use App\Http\Controllers\ReservationController;
 
 Route::get('/', [App\Http\Controllers\PublicController::class, 'index']);
+Route::get('/contact', [App\Http\Controllers\PublicController::class, 'contact']);
 Route::get('/client/hotels', [App\Http\Controllers\PublicController::class, 'hotels']);
 Route::get('/client/hotels/details/{id}', [App\Http\Controllers\PublicController::class, 'details']);
 Route::get('/client/hotels/checkout/{id}', [App\Http\Controllers\PublicController::class, 'checkout']);
